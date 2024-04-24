@@ -1,0 +1,10 @@
+<h1>Comentarios</h1>
+<app-ejercicio4h (llamadaPadre)="recibir($event)"></app-ejercicio4h>
+
+<ul>
+    <li>
+        @for (comentario of comentarios; track comentario) {
+            <p>{{comentario}}</p>
+        }
+    </li>
+</ul>

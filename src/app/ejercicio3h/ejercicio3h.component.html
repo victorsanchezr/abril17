@@ -1,0 +1,7 @@
+<select [(ngModel)]="asignatura">
+    @for (selecciona of seleccionar; track seleccionar) {
+     <option [value]="selecciona">{{selecciona}}</option>  
+    }
+</select>
+<br>
+<button (click)="enviarPadre()">Asignar</button>
